@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.864);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  border: 0.1rem solid rgb(224, 224, 224);
+  border-radius: 3rem;
+  padding-bottom: 1rem;
+  width: 18rem;
+}
+
+.screen {
+  border-radius: 3rem 3rem 0 0;
+  width: 18rem;
+  height: 4rem;
+  background-color: rgb(224, 224, 224);;
+  color: black;
+  text-align: right;
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.digits-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.25rem;
+  padding: 0.25rem;
+  justify-items: center;
+}
+
+.btn {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  color: rgb(224, 224, 224);
+}
+
+.equal-sign {
+    height: 100%;
+    grid-area: 2/ 4/ 6/5;
+}
+
+.btn:hover {
+  border-color: rgb(233, 160, 34);
+  color: rgb(233, 160, 34);
+}
+
+.btn:active {
+  border-color: rgb(233, 160, 34);
+  color: rgb(233, 160, 34);
+}
+
+.all-clear {
+    background-color: rgb(233, 160, 34);
+}
