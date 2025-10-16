@@ -5,12 +5,6 @@ let firstDigit = "";
 let operator = "";
 let secondDigit = "";
 
-// Operation functions
-const add = (num1, num2) => num1 + num2;
-const subtract = (num1, num2) => num1 - num2;
-const multiply = (num1, num2) => num1 * num2;
-const divide = (num1, num2) => num1 / num2;
-
 keys.forEach((key) =>
   key.addEventListener("click", () => {
     const value = key.innerHTML;
